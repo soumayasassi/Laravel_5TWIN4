@@ -45,3 +45,4 @@ Route::get('/restricted', function()
     return "You are allowed to access this page" ;
 
 }) ->middleware('verif.age');
+Route::resource('product',\App\Http\Controllers\ProductController::class);
